@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUpPage</title>
+    <link rel="stylesheet" href="signUp.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="left">
+        <h2>Header</h2>
+      </div>
+      <div class="right">
+        <li><a href="">Signup</a></li>
+        <li id="profilebtn"><a href="">Profile</a></li>
+      </div>
+    </nav>
+    <div class="container">
+      <h1>Signup</h1>
+      <form action="#">
+        <input type="text" id="name" placeholder="Full Name" />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <input type="password" id="cnfpass" placeholder="Confirm Password" />
+        <p style="display: none; color: red;" id="redmsg">
+          Error : All the fields are mandatory
+        </p>
+        <p style="display: none; color: green;" id="greenmsg">
+          Successfully Signed Up!
+        </p>
+        <button id="signup">Signup</button>
+      </form>
+    </div>
+    <script src="signUp.js"></script>
+  </body>
+</html>
